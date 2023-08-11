@@ -8,6 +8,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'airbnb-typescript',
     'plugin:jest/recommended',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -20,7 +21,7 @@ module.exports = {
     project: './tsconfig.json',
     warnOnUnsupportedTypeScriptVersion: true,
   },
-  plugins: ['@typescript-eslint', 'jest', 'prettier', 'import'],
+  plugins: ['@typescript-eslint', 'jest', 'prettier', 'import', 'storybook'],
   env: {
     browser: true,
     commonjs: true,
@@ -44,6 +45,7 @@ module.exports = {
     'no-restricted-exports': 'off',
     'class-methods-use-this': 'off',
     // plugin: import
+    'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'off',
     'import/no-import-module-exports': 'off',
@@ -92,7 +94,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/default-props-match-prop-types': 'off',
-    'react/jsx-props-no-spreading': 'error',
+    'react/jsx-props-no-spreading': 'off',
     'react/function-component-definition': [
       'error',
       {
