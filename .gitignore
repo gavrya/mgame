@@ -3,6 +3,7 @@
 # editors
 /.idea
 /.vscode
+todo.txt
 
 # dependencies
 /node_modules
