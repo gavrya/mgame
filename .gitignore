@@ -5,6 +5,9 @@
 /.vscode
 todo.txt
 
+# storybook-static
+/storybook-static
+
 # dependencies
 /node_modules
 /.pnp
