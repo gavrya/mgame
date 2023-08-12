@@ -1,0 +1,113 @@
+:root {
+  /*
+   ------------------------
+   |       VARIABLES      |
+   ------------------------
+   Here should be listed general, context unaware variables
+  */
+
+  /* colors */
+  --orange-120: #e87928;
+  --orange-100: #ff8b37;
+  --orange-80: #ffac70;
+  --orange-5: #fff3eb;
+  --green-100: #47d867;
+  --green-5: #e6faea;
+  --red-100: #ec6259;
+  --red-5: #fdeeed;
+  --black-100: #1c1c21;
+  --black-40: #d0d0d8;
+  --black-5: #f5f5f7;
+  --white-100: #ffffff;
+
+  /* fonts */
+  --inter-regular-font: 400 normal 116%/1.16 'Inter', sans-serif;
+  --inter-bold-font: 600 normal 116%/1.16 'Inter', sans-serif;
+
+  /* font sizes */
+  --font-size-s: 14px;
+  --font-size-xs: 18px;
+  --font-size-x: 20px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 56px;
+
+  /*
+   ------------------------
+   |        THEME         |
+   ------------------------
+   Here should be listed context-related variables, which describe specificity
+   parts of the system(components, layout, etc.)
+   Usually THEME part is based on VARIABLES.
+  */
+
+  /* breakpoints */
+  --mobile-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+
+  /* font colors */
+  --primary-font-color: var(--black-100);
+
+  /* primary button */
+  --primary-button-desktop-height: 64px;
+  --primary-button-mobile-height: 48px;
+
+  --primary-button-inactive: var(--orange-100);
+  --primary-button-hover: var(--orange-80);
+  --primary-button-pressed: var(--orange-120);
+
+  --primary-button-font-color: var(--white-100);
+
+  /* option button */
+  --option-button-desktop-height: 72px;
+  --option-button-mobile-height: 56px;
+  --option-button-height: var(--option-button-desktop-height);
+
+  --option-button-inactive-background: var(--white-100);
+  --option-button-selected-background: var(--orange-5);
+  --option-button-correct-background: var(--green-5);
+  --option-button-wrong-background: var(--red-5);
+  --option-button-hover-background: var(--white-100);
+
+  --option-button-inactive-border: var(--black-40);
+  --option-button-selected-border: var(--orange-100);
+  --option-button-correct-border: var(--green-100);
+  --option-button-wrong-border: var(--red-100);
+  --option-button-hover-border: var(--orange-100);
+
+  --option-button-font-color: var(--primary-font-color);
+
+  /* step component */
+  --step-desktop-height: 40px;
+  --step-mobile-height: 32px;
+  --step-height: var(--step-desktop-height);
+
+  --step-background: var(--white-100);
+
+  --step-border: var(--black-40);
+  --step-current-border: var(--orange-100);
+
+  --step-inactive-font-color: var(--primary-font-color);
+  --step-current-font-color: var(--orange-100);
+  --step-finished-font-color: var(--black-40);
+
+  /* menu component */
+  --menu-height: 24px;
+  --menu-width: 24px;
+
+  --menu-font-color: var(--primary-font-color);
+}
+
+/* media queries */
+@media (min-width: var(--mobile-breakpoint)) {
+  :root {
+    --option-button-height: var(--option-button-mobile-height);
+    --step-height: var(--step-mobile-height);
+  }
+}
+
+@media (min-width: var(--desktop-breakpoint)) {
+  :root {
+    --option-button-height: var(--option-button-desktop-height);
+    --step-height: var(--step-desktop-height);
+  }
+}
