@@ -24,7 +24,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Inter', Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

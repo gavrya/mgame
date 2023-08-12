@@ -44,6 +44,10 @@
   --mobile-breakpoint: 768px;
   --desktop-breakpoint: 1024px;
 
+  /* transition */
+  --default-transition-duration: 0.2s;
+  --default-transition-function: ease;
+
   /* font colors */
   --primary-font-color: var(--black-100);
 
@@ -51,11 +55,13 @@
   --primary-button-desktop-height: 64px;
   --primary-button-mobile-height: 48px;
 
-  --primary-button-inactive: var(--orange-100);
-  --primary-button-hover: var(--orange-80);
-  --primary-button-pressed: var(--orange-120);
+  --primary-button-inactive-color: var(--orange-100);
+  --primary-button-hover-color: var(--orange-80);
+  --primary-button-pressed-color: var(--orange-120);
 
   --primary-button-font-color: var(--white-100);
+
+  --primary-button-border-radius: 12px;
 
   /* option button */
   --option-button-desktop-height: 72px;
