@@ -74,10 +74,14 @@
     "webpack": "^5.88.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint && exit 1"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged && exit 1",
       "pre-push": "npm test"
     }
   }
