@@ -26,7 +26,8 @@
     "format": "prettier --check src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint --fix src/**/*.ts{,x}",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -81,8 +82,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-commit": "lint-staged && exit 1",
+      "pre-push": "npm test && exit 1"
     }
   }
 }
