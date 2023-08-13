@@ -1,0 +1,71 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: var(--step-desktop-height);
+  width: var(--step-desktop-width);
+}
+
+.svgElement {
+  width: 100%;
+}
+
+.svgElement path {
+  stroke: var(--step-border-color);
+  transition: all var(--default-transition-duration)
+    var(--default-transition-function);
+}
+
+.borderCurrent path {
+  stroke: var(--step-current-border-color);
+}
+
+.mobileSvg {
+  display: none;
+}
+
+.desktopSvg {
+  display: inline-block;
+}
+
+.children {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font: var(--inter-regular-font);
+  font-size: var(--font-size-big);
+  transition: all var(--default-transition-duration)
+    var(--default-transition-function);
+}
+
+.titleInactive {
+  color: var(--step-inactive-font-color);
+}
+
+.titleCurrent {
+  color: var(--step-current-font-color);
+}
+
+.titleFinished {
+  color: var(--step-finished-font-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: var(--step-mobile-width);
+  }
+
+  .children {
+    height: var(--step-mobile-height);
+    font-size: var(--font-size-small);
+  }
+
+  .mobileSvg {
+    display: inline-block;
+  }
+
+  .desktopSvg {
+    display: none;
+  }
+}

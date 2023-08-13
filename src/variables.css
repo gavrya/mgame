@@ -25,11 +25,11 @@
   --inter-bold-font: 600 normal 116%/1.16 'Inter', sans-serif;
 
   /* font sizes */
-  --font-size-s: 14px;
-  --font-size-xs: 18px;
-  --font-size-x: 20px;
-  --font-size-xl: 32px;
-  --font-size-xxl: 56px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-big: 20px;
+  --font-size-large: 32px;
+  --font-size-extra-large: 56px;
 
   /*
    ------------------------
@@ -54,44 +54,40 @@
   /* primary button */
   --primary-button-desktop-height: 64px;
   --primary-button-mobile-height: 48px;
-
+  --primary-button-desktop-width: 296px;
+  --primary-button-mobile-width: 288px;
   --primary-button-inactive-color: var(--orange-100);
   --primary-button-hover-color: var(--orange-80);
   --primary-button-pressed-color: var(--orange-120);
-
   --primary-button-font-color: var(--white-100);
-
   --primary-button-border-radius: 12px;
 
   /* option button */
   --option-button-desktop-height: 72px;
   --option-button-mobile-height: 56px;
-  --option-button-height: var(--option-button-desktop-height);
-
+  --option-button-desktop-width: 421px;
+  --option-button-mobile-width: 320px;
   --option-button-inactive-background: var(--white-100);
   --option-button-selected-background: var(--orange-5);
   --option-button-correct-background: var(--green-5);
   --option-button-wrong-background: var(--red-5);
   --option-button-hover-background: var(--white-100);
-
   --option-button-inactive-border: var(--black-40);
   --option-button-selected-border: var(--orange-100);
   --option-button-correct-border: var(--green-100);
   --option-button-wrong-border: var(--red-100);
   --option-button-hover-border: var(--orange-100);
-
-  --option-button-font-color: var(--primary-font-color);
+  --option-button-option-font-color: var(--orange-100);
+  --option-button-question-font-color: var(--primary-font-color);
 
   /* step component */
   --step-desktop-height: 40px;
   --step-mobile-height: 32px;
-  --step-height: var(--step-desktop-height);
-
+  --step-desktop-width: 376px;
+  --step-mobile-width: 320px;
   --step-background: var(--white-100);
-
-  --step-border: var(--black-40);
-  --step-current-border: var(--orange-100);
-
+  --step-border-color: var(--black-40);
+  --step-current-border-color: var(--orange-100);
   --step-inactive-font-color: var(--primary-font-color);
   --step-current-font-color: var(--orange-100);
   --step-finished-font-color: var(--black-40);
@@ -99,21 +95,5 @@
   /* menu component */
   --menu-height: 24px;
   --menu-width: 24px;
-
   --menu-font-color: var(--primary-font-color);
-}
-
-/* media queries */
-@media (min-width: var(--mobile-breakpoint)) {
-  :root {
-    --option-button-height: var(--option-button-mobile-height);
-    --step-height: var(--step-mobile-height);
-  }
-}
-
-@media (min-width: var(--desktop-breakpoint)) {
-  :root {
-    --option-button-height: var(--option-button-desktop-height);
-    --step-height: var(--step-desktop-height);
-  }
 }
