@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  font: var(--inter-bold-font);
+}
+
+.score {
+  font-size: var(--font-size-large);
+  color: var(--black-100);
+  opacity: 0.5;
+}
+
+.earned {
+  font-size: var(--font-size-extra-large);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    text-align: center;
+  }
+
+  .score {
+    font-size: var(--font-size-medium);
+  }
+
+  .earned {
+    font-size: var(--font-size-large);
+  }
+}

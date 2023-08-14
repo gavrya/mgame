@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+}

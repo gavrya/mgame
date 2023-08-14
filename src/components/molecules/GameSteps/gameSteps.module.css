@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 376px;
+  height: 100%;
+  gap: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 320px;
+  }
+}

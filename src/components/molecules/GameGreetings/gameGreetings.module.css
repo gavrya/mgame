@@ -1,0 +1,12 @@
+.wrapper {
+  width: 100%;
+  font: var(--inter-bold-font);
+  font-size: var(--font-size-extra-large);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    font-size: var(--font-size-large);
+    text-align: center;
+  }
+}
