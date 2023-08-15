@@ -11,7 +11,9 @@ const GameQuiz: React.FC<IGameQuizProps> = ({
   onAnswerOptionSelect,
 }) => (
   <div data-testid="game-quiz" className={clsx(styles.wrapper, className)}>
-    <div className={styles.questionSection}>{question}</div>
+    <div className={styles.questionSection}>
+      <div className={styles.question}>{question}</div>
+    </div>
     <div className={styles.answerSection}>
       <AnswerOptions
         answerOptions={answerOptions}

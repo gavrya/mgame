@@ -2,22 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  /*width: 842px;*/
   height: 100%;
 }
 
+.question {
+  max-width: 642px;
+}
+
 .questionSection {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
   font: var(--inter-bold-font);
   font-size: var(--font-size-large);
-  width: 100%;
-  padding-top: 133px;
 }
 
 .answerSection {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  padding-bottom: 122px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -25,15 +29,28 @@
     flex-direction: column;
   }
 
+  .question {
+    width: 288px;
+    text-align: center;
+  }
+
   .questionSection {
     font-size: var(--font-size-medium);
-    text-align: center;
-    max-width: 288px;
-    padding-top: 136px;
+    justify-content: center;
   }
 
   .answerSection {
     justify-content: center;
-    padding-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .answerSection {
+    justify-content: center;
+  }
+
+  .question {
+    max-width: 421px;
+    text-align: center;
   }
 }
