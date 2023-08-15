@@ -10,6 +10,7 @@ const GameInfo: React.FC<IGameInfoProps> = ({
   withBackground = false,
   buttonName,
   children,
+  onClick,
 }) => {
   const wrapperClassName = clsx(
     styles.wrapper,
@@ -26,7 +27,7 @@ const GameInfo: React.FC<IGameInfoProps> = ({
       </section>
       <section className={styles.secondSection}>
         {children}
-        <PrimaryButton className={styles.submitButton}>
+        <PrimaryButton className={styles.submitButton} onClick={onClick}>
           {buttonName}
         </PrimaryButton>
       </section>

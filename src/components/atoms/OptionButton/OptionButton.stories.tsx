@@ -19,7 +19,7 @@ export const Inactive: Story = {
   args: {
     status: 'inactive',
     option: 'A',
-    question: 'What is your name?',
+    answer: 'What is your name?',
   },
 };
 
@@ -27,7 +27,7 @@ export const Selected: Story = {
   args: {
     status: 'selected',
     option: 'A',
-    question: 'What is your name?',
+    answer: 'What is your name?',
   },
 };
 
@@ -35,7 +35,7 @@ export const Correct: Story = {
   args: {
     status: 'correct',
     option: 'A',
-    question: 'What is your name?',
+    answer: 'What is your name?',
   },
 };
 
@@ -43,6 +43,6 @@ export const Wrong: Story = {
   args: {
     status: 'wrong',
     option: 'A',
-    question: 'What is your name?',
+    answer: 'What is your name?',
   },
 };

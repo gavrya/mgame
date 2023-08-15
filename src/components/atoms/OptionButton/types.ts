@@ -4,7 +4,7 @@ interface IOptionButtonProps {
   className?: string;
   status: 'inactive' | 'selected' | 'correct' | 'wrong';
   option: string;
-  question: string;
+  answer: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 

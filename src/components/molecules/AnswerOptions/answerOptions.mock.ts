@@ -2,25 +2,25 @@ import type { IAnswerOption } from './types';
 
 const mockedInactiveAnswerOption: IAnswerOption = {
   option: 'I',
-  question: 'Inactive',
+  answer: 'Inactive',
   status: 'inactive',
 };
 
 const mockedSelectedAnswerOption: IAnswerOption = {
   option: 'S',
-  question: 'Selected',
+  answer: 'Selected',
   status: 'selected',
 };
 
 const mockedCorrectAnswerOption: IAnswerOption = {
   option: 'C',
-  question: 'Correct',
+  answer: 'Correct',
   status: 'correct',
 };
 
 const mockedWrongAnswerOption: IAnswerOption = {
   option: 'W',
-  question: 'Wrong',
+  answer: 'Wrong',
   status: 'wrong',
 };
 

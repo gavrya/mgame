@@ -9,7 +9,7 @@ const OptionButton: React.FC<IOptionButtonProps> = ({
   className,
   status,
   option,
-  question,
+  answer,
   onClick,
 }) => {
   const statusClassName = clsx({
@@ -35,7 +35,7 @@ const OptionButton: React.FC<IOptionButtonProps> = ({
       />
       <div data-testid="question" className={styles.question}>
         <span className={styles.option}>{option}</span>
-        {question}
+        {answer}
       </div>
     </button>
   );

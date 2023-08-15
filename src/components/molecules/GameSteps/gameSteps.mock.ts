@@ -15,7 +15,7 @@ const mockedFinishedGameStep: IGameStep = {
   status: 'finished',
 };
 
-const mockedGameSteps: IGameStep[] = [
+const gameSteps: IGameStep[] = [
   mockedInactiveGameStep,
   mockedInactiveGameStep,
   mockedInactiveGameStep,
@@ -29,5 +29,12 @@ const mockedGameSteps: IGameStep[] = [
   mockedFinishedGameStep,
   mockedFinishedGameStep,
 ];
+
+const maxPrice = 1000000;
+
+const mockedGameSteps = gameSteps.map((item, index) => ({
+  ...item,
+  price: maxPrice - index * 10000,
+}));
 
 export { mockedGameSteps };

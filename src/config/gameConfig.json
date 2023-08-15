@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "question": "Current year?",
+      "answers": [
+        {
+          "option": "A",
+          "answer": "2000"
+        },
+        {
+          "option": "B",
+          "answer": "2010"
+        },
+        {
+          "option": "C",
+          "answer": "2020"
+        },
+        {
+          "option": "D",
+          "answer": "2023"
+        }
+      ],
+      "correctAnswerOptions": ["D"]
+    }
+  ]
+}

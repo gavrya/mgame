@@ -11,13 +11,13 @@ const AnswerOptions: React.FC<IAnswerOptionsProps> = ({
 }) => (
   <div data-testid="answer-options" className={clsx(styles.wrapper, className)}>
     {answerOptions.map((answerOption) => {
-      const { option, question, status } = answerOption;
+      const { option, answer, status } = answerOption;
 
       return (
         <OptionButton
           key={option}
           option={option}
-          question={question}
+          answer={answer}
           status={status}
           onClick={() => {
             onAnswerOptionSelect?.(answerOption);

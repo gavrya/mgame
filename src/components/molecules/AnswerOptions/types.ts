@@ -2,7 +2,7 @@ import type { IOptionButtonProps } from '../../atoms/OptionButton';
 
 interface IAnswerOption {
   option: string;
-  question: string;
+  answer: string;
   status: IOptionButtonProps['status'];
 }
 
