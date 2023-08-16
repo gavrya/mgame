@@ -1,4 +1,4 @@
-# mgame
+# Mgame
 Mgame - «Who Wants to Be a Millionaire?» game
 
 ## Instructions
