@@ -16,6 +16,10 @@ const routes = [
     path: '/results',
     element: <GameOverPage />,
   },
+  {
+    path: '*',
+    element: <div>NOT FOUND</div>,
+  },
 ];
 
 export { routes };
