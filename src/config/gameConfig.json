@@ -1,26 +1,280 @@
 {
   "questions": [
     {
-      "question": "Current year?",
+      "question": "What is the capital of France?",
+      "price": 1000,
       "answers": [
         {
           "option": "A",
-          "answer": "2000"
+          "answer": "Berlin"
         },
         {
           "option": "B",
-          "answer": "2010"
+          "answer": "Madrid"
         },
         {
           "option": "C",
-          "answer": "2020"
+          "answer": "Paris"
         },
         {
           "option": "D",
-          "answer": "2023"
+          "answer": "Rome"
+        }
+      ],
+      "correctAnswerOptions": ["C"]
+    },
+    {
+      "question": "Which planet is known as the 'Red Planet'?",
+      "price": 2000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Jupiter"
+        },
+        {
+          "option": "B",
+          "answer": "Mars"
+        },
+        {
+          "option": "C",
+          "answer": "Venus"
+        },
+        {
+          "option": "D",
+          "answer": "Saturn"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
+    },
+    {
+      "question": "What is the largest mammal?",
+      "price": 3000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Elephant"
+        },
+        {
+          "option": "B",
+          "answer": "Blue Whale"
+        },
+        {
+          "option": "C",
+          "answer": "Giraffe"
+        },
+        {
+          "option": "D",
+          "answer": "Lion"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
+    },
+    {
+      "question": "Which scientist developed the theory of relativity?",
+      "price": 4000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Isaac Newton"
+        },
+        {
+          "option": "B",
+          "answer": "Albert Einstein"
+        },
+        {
+          "option": "C",
+          "answer": "Galileo Galilei"
+        },
+        {
+          "option": "D",
+          "answer": "Nikola Tesla"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
+    },
+    {
+      "question": "Which famous painting is often referred to as the 'Mona Lisa'?",
+      "price": 5000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Starry Night"
+        },
+        {
+          "option": "B",
+          "answer": "The Persistence of Memory"
+        },
+        {
+          "option": "C",
+          "answer": "The Scream"
+        },
+        {
+          "option": "D",
+          "answer": "La Gioconda"
         }
       ],
       "correctAnswerOptions": ["D"]
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "price": 6000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Au"
+        },
+        {
+          "option": "B",
+          "answer": "Ag"
+        },
+        {
+          "option": "C",
+          "answer": "Fe"
+        },
+        {
+          "option": "D",
+          "answer": "Cu"
+        }
+      ],
+      "correctAnswerOptions": ["A"]
+    },
+    {
+      "question": "Which famous scientist formulated the laws of motion and gravitation?",
+      "price": 7000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Isaac Newton"
+        },
+        {
+          "option": "B",
+          "answer": "Albert Einstein"
+        },
+        {
+          "option": "C",
+          "answer": "Galileo Galilei"
+        },
+        {
+          "option": "D",
+          "answer": "Nikola Tesla"
+        }
+      ],
+      "correctAnswerOptions": ["A"]
+    },
+    {
+      "question": "Which gas is most abundant in Earth's atmosphere?",
+      "price": 8000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Oxygen"
+        },
+        {
+          "option": "B",
+          "answer": "Nitrogen"
+        },
+        {
+          "option": "C",
+          "answer": "Carbon Dioxide"
+        },
+        {
+          "option": "D",
+          "answer": "Helium"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "price": 9000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Mark Twain"
+        },
+        {
+          "option": "B",
+          "answer": "William Shakespeare"
+        },
+        {
+          "option": "C",
+          "answer": "Charles Dickens"
+        },
+        {
+          "option": "D",
+          "answer": "Jane Austen"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "price": 10000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Jupiter"
+        },
+        {
+          "option": "B",
+          "answer": "Mars"
+        },
+        {
+          "option": "C",
+          "answer": "Earth"
+        },
+        {
+          "option": "D",
+          "answer": "Venus"
+        }
+      ],
+      "correctAnswerOptions": ["A"]
+    },
+    {
+      "question": "Which famous scientist developed the theory of evolution by natural selection?",
+      "price": 11000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Isaac Newton"
+        },
+        {
+          "option": "B",
+          "answer": "Albert Einstein"
+        },
+        {
+          "option": "C",
+          "answer": "Charles Darwin"
+        },
+        {
+          "option": "D",
+          "answer": "Nikola Tesla"
+        }
+      ],
+      "correctAnswerOptions": ["C"]
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "price": 12000,
+      "answers": [
+        {
+          "option": "A",
+          "answer": "Wt"
+        },
+        {
+          "option": "B",
+          "answer": "H2O"
+        },
+        {
+          "option": "C",
+          "answer": "O2"
+        },
+        {
+          "option": "D",
+          "answer": "CO2"
+        }
+      ],
+      "correctAnswerOptions": ["B"]
     }
   ]
 }

@@ -31,8 +31,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding-top: 133px;
-  padding-bottom: 122px;
+  /*padding-top: 133px;*/
+  /*padding-bottom: 122px;*/
 }
 
 .gameStepsContainer {
@@ -52,8 +52,8 @@
   }
 
   .gameQuizContainer {
-    padding-top: 136px;
-    padding-bottom: 24px;
+    /*padding-top: 136px;*/
+    /*padding-bottom: 24px;*/
   }
 
   .gameStepsContainer[data-opened='true'] {

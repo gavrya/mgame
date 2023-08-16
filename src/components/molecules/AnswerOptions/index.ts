@@ -1,2 +1,2 @@
 export { AnswerOptions } from './AnswerOptions';
-export type { IAnswerOptionsProps } from './types';
+export type { IAnswerOptionsProps, IAnswerOption } from './types';

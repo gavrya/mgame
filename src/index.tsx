@@ -2,26 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './variables.css';
-// import App from './app/App';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { GameStartPage } from './components/pages/GameStartPage';
-import { GamePlayPage } from './components/pages/GamePlayPage';
-import { GameOverPage } from './components/pages/GameOverPage';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <GameStartPage />,
-  },
-  {
-    path: '/play',
-    element: <GamePlayPage />,
-  },
-  {
-    path: '/results',
-    element: <GameOverPage />,
-  },
-]);
+import { ReduxProvider } from './providers/ReduxProvider';
+import { ReactRouterProvider } from './providers/ReactRouterProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -29,6 +11,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ReduxProvider>
+      <ReactRouterProvider />
+    </ReduxProvider>
   </React.StrictMode>,
 );

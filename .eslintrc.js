@@ -44,6 +44,7 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'no-restricted-exports': 'off',
     'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
     // plugin: import
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
@@ -102,6 +103,8 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    // plugin: react-hooks
+    'react-hooks/exhaustive-deps': 'off',
     // plugin: jsx-a11y
     'jsx-a11y/media-has-caption': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',

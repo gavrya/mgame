@@ -6,7 +6,7 @@ const GameStartPage = () => {
   const navigate = useNavigate();
 
   const handleGameStart = () => {
-    navigate('/play');
+    navigate('/play', { replace: true });
   };
 
   return <GameStart onStart={handleGameStart} />;

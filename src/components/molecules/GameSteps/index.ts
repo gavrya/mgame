@@ -1,2 +1,2 @@
 export { GameSteps } from './GameSteps';
-export type { IGameStepsProps } from './types';
+export type { IGameStepsProps, IGameStep } from './types';

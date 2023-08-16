@@ -92,7 +92,7 @@
   --step-current-font-color: var(--orange-100);
   --step-finished-font-color: var(--black-40);
 
-  /* menu component */
+  /* menu toggle component */
   --menu-height: 24px;
   --menu-width: 24px;
   --menu-font-color: var(--primary-font-color);
