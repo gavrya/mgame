@@ -15,7 +15,7 @@ Install npm packages:
 npm i
 ```
 
-Start game:
+Start the game:
 
 ```shell
 npm start
@@ -25,7 +25,7 @@ Open url to play game:
 
 http://localhost:3000
 
-Start storybook:
+Start Storybook:
 
 ```shell
 npm storybook
