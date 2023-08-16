@@ -1,0 +1,107 @@
+.primaryButton_wrapper__ju\+0t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--inter-bold-font);
+  font-size: var(--font-size-big);
+  color: var(--primary-button-font-color);
+  padding: 0;
+  border: none;
+  height: var(--primary-button-desktop-height);
+  width: var(--primary-button-desktop-width);
+  background-color: var(--primary-button-inactive-color);
+  transition: background-color var(--default-transition-duration)
+    var(--default-transition-function);
+  border-radius: var(--primary-button-border-radius);
+  cursor: pointer;
+}
+
+.primaryButton_wrapper__ju\+0t:hover {
+  background-color: var(--primary-button-hover-color);
+}
+
+.primaryButton_wrapper__ju\+0t:active {
+  background-color: var(--primary-button-pressed-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .primaryButton_wrapper__ju\+0t {
+    height: var(--primary-button-mobile-height);
+    font-size: var(--font-size-small);
+    width: var(--primary-button-mobile-width);
+  }
+}
+
+.gameInfo_wrapper__bdeSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px 16px 48px 16px;
+}
+
+.gameInfo_background__SQMIr {
+  background-image: url(../../eb5ad9c3eb80680e8657.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gameInfo_firstSection__Xc6mt {
+  width: 624px;
+  height: 367px;
+}
+
+.gameInfo_handSvg__iPozV {
+  width: 100%;
+  height: 100%;
+}
+
+.gameInfo_secondSection__tcAEb {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  width: 624px;
+}
+
+.gameInfo_submitButton__faWx7 {
+  width: 248px;
+}
+
+@media only screen and (max-width: 768px) {
+  .gameInfo_wrapper__bdeSS {
+    flex-direction: column;
+  }
+
+  .gameInfo_firstSection__Xc6mt {
+    width: 288px;
+    margin-bottom: 24px;
+  }
+
+  .gameInfo_secondSection__tcAEb {
+    gap: 100px;
+    width: 288px;
+  }
+
+  .gameInfo_submitButton__faWx7 {
+    width: 100%;
+  }
+}
+
+.gameGreetings_wrapper__9OQdE {
+  width: 100%;
+  font: var(--inter-bold-font);
+  font-size: var(--font-size-extra-large);
+}
+
+@media only screen and (max-width: 768px) {
+  .gameGreetings_wrapper__9OQdE {
+    font-size: var(--font-size-large);
+    text-align: center;
+  }
+}
+
+
+/*# sourceMappingURL=components-templates-GameStart-GameStart-stories.87d43169.chunk.css.map*/

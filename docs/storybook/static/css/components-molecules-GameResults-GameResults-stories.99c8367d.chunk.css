@@ -1,0 +1,34 @@
+.gameResults_wrapper__UtFMT {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  font: var(--inter-bold-font);
+}
+
+.gameResults_score__qq\+kp {
+  font-size: var(--font-size-large);
+  color: var(--black-100);
+  opacity: 0.5;
+}
+
+.gameResults_earned__l-nFz {
+  font-size: var(--font-size-extra-large);
+}
+
+@media only screen and (max-width: 768px) {
+  .gameResults_wrapper__UtFMT {
+    text-align: center;
+  }
+
+  .gameResults_score__qq\+kp {
+    font-size: var(--font-size-medium);
+  }
+
+  .gameResults_earned__l-nFz {
+    font-size: var(--font-size-large);
+  }
+}
+
+
+/*# sourceMappingURL=components-molecules-GameResults-GameResults-stories.99c8367d.chunk.css.map*/

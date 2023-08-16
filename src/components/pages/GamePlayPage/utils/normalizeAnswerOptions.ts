@@ -10,14 +10,18 @@ const normalizeAnswerOptions = (
 
   question.answers.forEach((answer) => {
     let status: IAnswerOption['status'] = 'inactive';
-    const includesOption = selectedOptions.includes(answer.option);
+    const { correctAnswerOptions } = question;
+    const isOptionSelected = selectedOptions.includes(answer.option);
+    const isOptionCorrect = correctAnswerOptions.includes(answer.option);
 
-    if (includesOption && validate) {
-      status = 'correct';
-    } else if (includesOption && !validate) {
+    if (validate) {
+      if (isOptionCorrect) {
+        status = 'correct';
+      } else if (isOptionSelected) {
+        status = 'wrong';
+      }
+    } else if (isOptionSelected) {
       status = 'selected';
-    } else if (!includesOption && validate) {
-      status = 'wrong';
     }
 
     const answerOption: IAnswerOption = {

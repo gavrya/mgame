@@ -2,6 +2,7 @@ import { useMemo, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../../store/hooks/redux';
 import { actions } from '../../../../store/slices/game';
+import { processAnswerOption } from '../../../../store/thunks/game';
 import { normalizeGameSteps } from '../utils/normalizeGameSteps';
 import { normalizeAnswerOptions } from '../utils/normalizeAnswerOptions';
 import type { IAnswerOption } from '../../../molecules/AnswerOptions';
@@ -28,18 +29,15 @@ const useGamePlay = () => {
 
   const handleAnswerOptionSelect = useCallback(
     (answerOption: IAnswerOption) => {
-      dispatch(actions.acceptOption(answerOption.option));
-      dispatch(actions.checkOptions());
+      dispatch(processAnswerOption(answerOption.option));
     },
     [],
   );
 
   useEffect(() => {
-    setTimeout(() => {
-      if (gameSliceState.isFinished) {
-        navigate('/results', { replace: true });
-      }
-    }, 2000);
+    if (gameSliceState.isFinished) {
+      navigate('/results', { replace: true });
+    }
   }, [gameSliceState.isFinished]);
 
   useEffect(() => {

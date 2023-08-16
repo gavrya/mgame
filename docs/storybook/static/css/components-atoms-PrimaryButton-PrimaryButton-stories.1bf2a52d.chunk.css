@@ -1,0 +1,36 @@
+.primaryButton_wrapper__ju\+0t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--inter-bold-font);
+  font-size: var(--font-size-big);
+  color: var(--primary-button-font-color);
+  padding: 0;
+  border: none;
+  height: var(--primary-button-desktop-height);
+  width: var(--primary-button-desktop-width);
+  background-color: var(--primary-button-inactive-color);
+  transition: background-color var(--default-transition-duration)
+    var(--default-transition-function);
+  border-radius: var(--primary-button-border-radius);
+  cursor: pointer;
+}
+
+.primaryButton_wrapper__ju\+0t:hover {
+  background-color: var(--primary-button-hover-color);
+}
+
+.primaryButton_wrapper__ju\+0t:active {
+  background-color: var(--primary-button-pressed-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .primaryButton_wrapper__ju\+0t {
+    height: var(--primary-button-mobile-height);
+    font-size: var(--font-size-small);
+    width: var(--primary-button-mobile-width);
+  }
+}
+
+
+/*# sourceMappingURL=components-atoms-PrimaryButton-PrimaryButton-stories.1bf2a52d.chunk.css.map*/

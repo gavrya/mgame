@@ -1,0 +1,94 @@
+.optionButton_wrapper__NjGhK {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--option-button-desktop-height);
+  width: var(--option-button-desktop-width);
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.optionButton_wrapper__NjGhK:hover path {
+  stroke: var(--option-button-hover-border);
+}
+
+.optionButton_svgElement__M\+gKP {
+  width: 100%;
+}
+
+.optionButton_svgElement__M\+gKP path {
+  stroke: var(--option-button-inactive-border);
+  fill: var(--option-button-inactive-background);
+  transition: all var(--default-transition-duration)
+    var(--default-transition-function);
+}
+
+.optionButton_statusSelected__Ie9yX path {
+  stroke: var(--option-button-selected-border);
+  fill: var(--option-button-selected-background);
+}
+
+.optionButton_statusCorrect__Xaaly path {
+  stroke: var(--option-button-correct-border);
+  fill: var(--option-button-correct-background);
+}
+
+.optionButton_statusWrong__UhQMT path {
+  stroke: var(--option-button-wrong-border);
+  fill: var(--option-button-wrong-background);
+}
+
+.optionButton_mobileSvg__Bm8Az {
+  display: none;
+}
+
+.optionButton_desktopSvg__4JCaB {
+  display: inline-block;
+}
+
+.optionButton_option__Lt\+G8 {
+  color: var(--option-button-option-font-color);
+  font: var(--inter-bold-font);
+  font-size: var(--font-size-big);
+  padding-right: 8px;
+}
+
+.optionButton_question__2mmfG {
+  position: absolute;
+  left: 48px;
+  font: var(--option-button-question-font-color);
+  font-size: var(--font-size-big);
+  transition: all var(--default-transition-duration)
+    var(--default-transition-function);
+}
+
+@media only screen and (max-width: 768px) {
+  .optionButton_wrapper__NjGhK {
+    width: var(--option-button-mobile-width);
+    height: var(--option-button-mobile-height);
+  }
+
+  .optionButton_option__Lt\+G8 {
+    font-size: var(--font-size-small);
+  }
+
+  .optionButton_question__2mmfG {
+    left: 40px;
+    font-size: var(--font-size-small);
+  }
+
+  .optionButton_mobileSvg__Bm8Az {
+    display: inline-block;
+  }
+
+  .optionButton_desktopSvg__4JCaB {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=components-atoms-OptionButton-OptionButton-stories.e92c77d3.chunk.css.map*/

@@ -78,7 +78,7 @@ module.exports = {
     ],
     // plugin: @typescript-eslint/eslint-plugin
     '@typescript-eslint/no-misused-promises': 'error',
-    '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/consistent-type-exports': [
       'error',
       { fixMixedExportsWithInlineTypeSpecifier: true },

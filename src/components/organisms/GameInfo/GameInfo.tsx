@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { PrimaryButton } from '../../atoms/PrimaryButton';
 import styles from './gameInfo.module.css';
-import { ReactComponent as HandDesktopSvg } from './assets/handDesktop.svg';
+import { ReactComponent as HandSvg } from './assets/hand.svg';
 import type { IGameInfoProps } from './types';
 
 const GameInfo: React.FC<IGameInfoProps> = ({
@@ -23,7 +23,7 @@ const GameInfo: React.FC<IGameInfoProps> = ({
   return (
     <main data-testid="game-info" className={wrapperClassName}>
       <section className={styles.firstSection}>
-        <HandDesktopSvg className={styles.handSvg} />
+        <HandSvg className={styles.handSvg} />
       </section>
       <section className={styles.secondSection}>
         {children}

@@ -34,7 +34,7 @@
     "format": "prettier --check src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint --fix src/**/*.ts{,x}",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --output-dir ./docs/storybook",
     "prepare": "husky install"
   },
   "browserslist": {
@@ -82,7 +82,7 @@
     "webpack": "^5.88.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix"
     ]
   }
