@@ -31,8 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
-    "format": "prettier --check src/**/*.ts{,x}",
-    "lint": "tsc --noEmit && eslint --fix src/**/*.ts{,x}",
+    "format": "prettier --check 'src/**/*.ts{,x}'",
+    "lint": "tsc --noEmit && eslint --fix 'src/**/*.ts{,x}'",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build --output-dir ./docs/storybook",
     "prepare": "husky install"
