@@ -28,7 +28,7 @@ http://localhost:3000
 Start Storybook:
 
 ```shell
-npm storybook
+npm run storybook
 ```
 
 Open url to review storybook:
