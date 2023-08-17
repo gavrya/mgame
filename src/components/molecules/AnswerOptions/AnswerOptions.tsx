@@ -15,7 +15,7 @@ const AnswerOptions: React.FC<IAnswerOptionsProps> = ({
 
       return (
         <OptionButton
-          key={option}
+          key={answer}
           option={option}
           answer={answer}
           status={status}
